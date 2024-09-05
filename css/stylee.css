@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.root{
+    --layer-color : #00ffff3f;
+}
+.main-img{
+    height: calc(100vh - 60px);
+    background-size: cover;
+    background-position: center;
+}
+#main-text{
+    background-color: #f7f71f41;
+}
+.welcome-text{
+    background-image: linear-gradient( #2a2affde , #b2b2ff , rgb(194, 111, 241));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.popularbg{
+    background-image: url(../img/img5.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+}
+.popularinformation::after{
+content: " ";
+position: absolute;
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+background-color: #00ffff3f;
+}
+.popularinformation:hover::after{ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00ffff3f;
+    transition-duration: 1s;
+}
+.popularinformation::before{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00ffff3f;
+    }
+    .popularinformation:hover::before{ 
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #00ffff3f ;
+        transition-duration: 1s;
+    }
+.popularbackground{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+
+}
+.bg-image-section{
+    background-image: url(../img/layer4.jpeg);
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+.bg-image-section::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.432);
+
+}
+.thanks-text{
+    color: #44a3fc !important;
+}
+.thanks-cirical{
+    top: 60%;
+    left: 10%;
+}
+#thanks-img:hover{
+    transform: scale(.90);
+    transition: all .5s;
+}
+#thanks-img:hover .bg-image-section::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #100f468c;
+
+}
+.podcast {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.tilted-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    z-index: 100;
+}
+
+.tilted-image img {
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 15% 99%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 100 !important; 
+}
+
+.row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.tilted-image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    z-index: 3 !important;
+    
+}
+
+.tilted-image2 img {
+    clip-path: polygon(0 0, 100% 0, 91% 100%, 0 100%);
+    width: 100%;
+    
+}
+.podcast2{
+   
+    position: relative;
+    top: 0;
+    left: 20%;
+}
+.card-text{
+    width: 75%;
+}
+
+  
+  
