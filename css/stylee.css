@@ -20,13 +20,47 @@
     color: transparent;
 }
 .popularbg{
-    background-image: url(../img/img5.jfif);
+    background-image: url(../img/background1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 600px;
+    height: 400px;
+    
 }
+.popularbg .popular-layer{
+   
+    background-color: #0f0f0f21 ;
+}
+
+.bg-header{
+    background-image: linear-gradient( to top , #fafa08 , #7a7a19 );
+    
+}
+
+/* start of models */
+
+.modal-header {
+    background-color:  #c2c205;
+}
+
+.modal-header h5 {
+    color: white;
+}
+
+.btn-primary, .btn-secondary {
+    background-color: #c2c205!important;
+    border: none;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #616102 !important;
+}
+
+
+
+/* end of models */
+
 .popularinformation::after{
 content: " ";
 position: absolute;
@@ -34,13 +68,13 @@ width: 0;
 height: 0;
 top: 0;
 left: 0;
-background-color: #00ffff3f;
+background-color: #b6b90d4f;
 }
 .popularinformation:hover::after{ 
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #00ffff3f;
+    background-color: #b6b90d4f;
     transition-duration: 1s;
 }
 .popularinformation::before{
@@ -50,13 +84,13 @@ background-color: #00ffff3f;
     height: 0;
     bottom: 0;
     right: 0;
-    background-color: #00ffff3f;
+    background-color: #b6b90d4f;
     }
-    .popularinformation:hover::before{ 
+.popularinformation:hover::before{ 
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: #00ffff3f ;
+        background-color: #b6b90d4f ;
         transition-duration: 1s;
     }
 .popularbackground{
@@ -67,13 +101,19 @@ background-color: #00ffff3f;
     height: 500px;
 
 }
-.bg-image-section{
-    background-image: url(../img/layer4.jpeg);
-    height: 30rem;
-    position: relative;
-    overflow: hidden;
+.popularbackground  .layer{
+    background-color: #0f0f0f3f ;
 }
-.bg-image-section::after{
+
+.bg-image-section{
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.bg-image-section::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -81,10 +121,9 @@ background-color: #00ffff3f;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.432);
-
 }
 .thanks-text{
-    color: #44a3fc !important;
+    color: #f4f5f3 !important;
 }
 .thanks-cirical{
     top: 60%;
@@ -92,7 +131,7 @@ background-color: #00ffff3f;
 }
 #thanks-img:hover{
     transform: scale(.90);
-    transition: all .5s;
+    transition: all .8s;
 }
 #thanks-img:hover .bg-image-section::after{
     position: absolute;
@@ -102,11 +141,12 @@ background-color: #00ffff3f;
     top: 0;
     left: 0;
     background-color: #100f468c;
-
+    
 }
+
 .podcast {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     background-color: #fff;
 }
 
@@ -115,7 +155,7 @@ background-color: #00ffff3f;
     top: 0;
     right: 0;
     width: 40%;
-    z-index: 100;
+    z-index: 1;
 }
 
 .tilted-image img {
@@ -123,7 +163,7 @@ background-color: #00ffff3f;
     width: 100%;
     height: auto;
     object-fit: cover;
-    z-index: 100 !important; 
+    z-index: 5 !important; 
 }
 
 .row {
@@ -156,5 +196,174 @@ background-color: #00ffff3f;
     width: 75%;
 }
 
+.icon-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.icon-buttons label {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon-buttons label input {
+    appearance: none;
+}
+.icon-buttons label span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#555353, #363535, #303030);
+    border: 2px solid #222;
+    border-radius: 6px;
+    box-shadow: inset 0 5px 1px rgba(0, 0, 0, .35), 0 5px 5px rgba(0, 0, 0, 0.5), 0 15px 25px rgba(0, 0, 0, .35);
+}
+.icon-buttons label span::before {
+    content: " ";
+    position: absolute;
+    inset: 5px 3px;
+    border-top: 1px solid #ccc;
+    filter: blur(2px);
+}
+
+.icon-buttons label i {
+    position: relative;
+    z-index: 10;
+    font-size: 3.5em;
+    color: blue;
+}
+.icon-buttons label:hover span {
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, .35), 
+                0 5px 5px rgba(0, 0, 0, 0.5), 
+                0 15px 25px rgba(0, 0, 0, .35);
+}
+
+.icon-buttons label:hover i {
+    color: #fff;
+    text-shadow: 0 0 5px #219cf3, 
+                 0 0 8px #219cf3;
+}
+
+.insta{
+ color: #c92f76 !important;
+}
+.circle{
+    box-shadow: 0 10px 20px rgba(29, 39, 0, 0.986) , inset 0 2px 5px rgba(31, 31, 30, 0.623);
+}
+.fotter-span{
+    display: block;
+    height: 2px;    
+}
+.socail-icon {
+    top: 20%;
+    right: 10%;
+    font-size: 70px; 
+    position: fixed;
+}
+.socail-icon a i:hover{
+    color: #5e5909bb !important;
+}
+/* From Uiverse.io by ClawHack1 */ 
+/* Genel stil */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin: 10px;
+  }
+  
+  /* Giriş stil */
+  .toggle-switch .toggle-input {
+    display: none;
+  }
+  
+  /* Anahtarın stilinin etrafındaki etiketin stil */
+  .toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #c2c205;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Anahtarın yuvarlak kısmının stil */
+  .toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  /* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+  .toggle-switch .toggle-input:checked + .toggle-label {
+    background-color: #4CAF50;
+  }
+  
+  .toggle-switch .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+  }
+  
+ 
   
   
+@media  (max-width: 992px){
+.podcast-container {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+
+    }
+.podcast-info {
+    width: 100%;
+    
+}
+.tilted-image img{
+    clip-path: none;
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+    z-index: 5 !important; 
+    
+}
+.podcast-container2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.tilted-image {
+    position: static;
+    width: 100% !important;
+    z-index: 1;
+}
+.tilted-image2 img{
+    clip-path: none;
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+    z-index: 5 !important; 
+    
+}
+.tilted-image2 {
+    position: static;
+    width: 100% !important;
+    z-index: 1;
+}
+}

@@ -15,57 +15,92 @@
 
     <!-- start of header -->
    
-     <header  
-
-     
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
-            <div class="container">
-              <a class="navbar-brand" href="#">Egypt</a>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="d-flex logo-circle justify-content-center align-items-center ms-5 " >
+          <div class="circle rounded-circle d-flex justify-content-center align-items-center"style="width: 50px; height: 50px;">
+            <img src="img/logo.jfif" alt="" class="img-fluid rounded-circle  w-100 cover ">
+          </div>
+        </div>
+          <div class="container">
+              <a class="navbar-brand " href="#"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">about</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Link
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Link</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success mx-1" type="submit">Search</button>
-                  <button class="btn btn-outline-success" type="submit">login</button>
-                </form>
+                  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          kings
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Tutankhamun</a></li>
+                          <li><a class="dropdown-item" href="#">Ramses</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Akhenaten </a></li>
+                          <li><a class="dropdown-item" href="#"> Hatshepsut </a></li>
+                          <li><a class="dropdown-item" href="#">Thutmose </a></li>
+                          <li><a class="dropdown-item" href="#">Amenhotep</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                      </li>
+                      
+                  </ul>
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-warning mx-1" type="submit">Search</button>
+                      <button class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                  </form>
               </div>
-            </div>
-          </nav>
-        </header>  
-        
+          </div>
+      </nav>
+  </header>
+    
+    <!-- Login Section -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter your e-mail">
+                          <div class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Password">
+                      </div>
+                      
+                  </form>
+                  
+                  <div class="toggle-switch">
+                    <input class="toggle-input" id="toggle" type="checkbox">
+                    <label class="toggle-label" for="toggle"></label>
+                  </div>
+                  
+              </div>
+              <div class="modal-footer d-flex justify-content-between">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Login</button>
+              </div>
+          </div>
+      </div>
+  </div>
+    
      <!-- end of header -->
       <!-- start of carousel -->
-    <section id="main">
+    <section id="main position-relative">
+      
       <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -111,11 +146,23 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
           </button>
+          
       </div>
-  </section>
+      <div class="socail-icon d-flex flex-column position-absolute z-3 my-auto">
+        <div class="position-fixed">
+          <a href=""><i class="fab fa-facebook-square text-black  lh-sm"></i></a>
+          <a href=""><i class="fab fa-whatsapp-square text-black  lh-sm"></i></a>
+          <a href=""><i class="fab fa-instagram-square text-black  lh-sm "></i></a>
+          <a href=""><i class="fab fa-twitter-square text-black  lh-sm"></i></a>
+          <a href=""><i class="fab fa-linkedin text-black  lh-sm"></i></a>
+          
+        </div>
+        
+      </div>
+       </section>
   <!-- end of carousel -->
    <!-- start of welcome -->
-    <section class="bg-info-subtle py-3">
+    <section class="bg-wearing-subtle py-3">
       <div class="container">
         <div>
           <h2 class="welcome-text">welcome</h2>
@@ -128,7 +175,7 @@
     
     <!-- end of welcome -->
      <!-- start of populer -->
-      <section class="bg-info py-3">
+      <section class="bg-header  py-3">
         <div class="container ">
           <div class="populer">
             <h2 class="text-center text-capitalize text-white">popular destinations in egypt</h2>
@@ -175,7 +222,7 @@
         </section>
         <!-- end of accordion -->
          <!-- start of header translate to en -->
-         <section class="bg-info py-1 rounded mt-5">
+         <section class="bg-header  py-1 rounded mt-5">
           <div class="container ">
             <div class="populer">
               <h2 class="text-center text-capitalize text-white">transalte to English</h2>
@@ -184,12 +231,12 @@
         </section>
         <!-- end of header translate to en -->
         <!-- start of transalte to en -->
-        <section class="bg-info-subtle ">
+        <section class="bg-warning-subtle ">
           <div class="container">
-            <h3>Lorem, ipsum dolor.</h3>
+            <h3 class="text-capitalize ">write and transalte <span class="text-capitalize text-info">press here</span></h3>
             <span class="d-inline-block position-relative" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
               
-              <button class="btn btn-primary" type="button" id="copyButton">Copy Link</button>
+              <button class="btn btn-primary copyButton" type="button" id="">Copy Link</button>
             </span>
             <div class="form-floating py-3">
               <textarea class="form-control" placeholder="translate" id="floatingTextarea2" style="height: 100px"></textarea>
@@ -199,7 +246,7 @@
         </section>
          <!-- end of transalte to end -->
           <!--  start of transalte to frensh -->
-          <section class="bg-info py-1 rounded mt-4">
+          <section class="bg-header  py-1 rounded mt-4">
             <div class="container ">
               <div class="populer">
                 <h2 class="text-center text-capitalize text-white">transalte to Frensh</h2>
@@ -208,22 +255,22 @@
           </section>
              <!--  end of header transalte to frensh -->
             <!-- start of transalte to frensh -->
-             <section class="bg-info-subtle m-0">
+             <section class="bg-warning-subtle m-0">
              <div class="container">
-                <h3>Lorem, ipsum dolor.</h3>
+              <h3 class="text-capitalize ">write and transalte <span class="text-capitalize text-info">press here</span></h3>
                       <span class="d-inline-block position-relative" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
       
-      <button class="btn btn-primary" type="button" id="copyButton">Copy Link</button>
-    </span>
-    <div class="form-floating py-3">
-      <textarea class="form-control" placeholder="translate" id="floatingTextarea2" style="height: 100px"></textarea>
-      <label for="floatingTextarea2">translate</label>
-    </div>
-  </div>
+             <button class="btn btn-primary copyButton" type="button" id="">Copy Link</button>
+          </span>
+            <div class="form-floating py-3">
+             <textarea class="form-control" placeholder="translate" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">translate</label>
+            </div>
+              </div>
                  </section>
             <!-- end of transalte to frensh -->
               <!-- start of header translate to german -->
-         <section class="bg-info py-1 rounded mt-4">
+         <section class="bg-header  py-1 rounded mt-4">
           <div class="container ">
             <div class="populer">
               <h2 class="text-center text-capitalize text-white">transalte to English</h2>
@@ -232,12 +279,12 @@
         </section>
         <!-- end of header translate to german -->
         <!-- start of transalte to german -->
-        <section class="bg-info-subtle ">
+        <section class="bg-warning-subtle ">
           <div class="container">
-            <h3>Lorem, ipsum dolor.</h3>
+            <h3 class="text-capitalize ">write and transalte <span class="text-capitalize text-info">press here</span></h3>
             <span class="d-inline-block position-relative" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
               
-              <button class="btn btn-primary" type="button" id="copyButton">Copy Link</button>
+              <button class="btn btn-primary copyButton" type="button" id="">Copy Link</button>
             </span>
             <div class="form-floating py-3">
               <textarea class="form-control" placeholder="translate" id="floatingTextarea2" style="height: 100px"></textarea>
@@ -245,24 +292,27 @@
             </div>
           </div>
         </section>
- <!-- end of transalte to german -->
-<!-- start of popular destinations background -->
+        <!-- end of transalte to german -->
+      <!-- start of popular destinations background -->
      <section id="popular" >
-         <div class="popularbg w-100" >
-             
+         <div class="popularbg w-100 position-relative" >
+          <div class="popular-layer position-absolute w-100 h-100 top-0 left-0 right-0 bottom-0">
+
+          </div>
          </div>
+         
     </section>
- <!-- end of popular destinations background -->
-  <!-- start of popular header -->
-     <section class="bg-info py-1 rounded ">
+     <!-- end of popular destinations background -->
+      <!-- start of popular header -->
+     <section class="bg-header  py-1 rounded ">
     <div class="container ">
       <div class="populer">
         <h2 class="text-center text-upper welcome-text text-uppercase  ">popular destinations in egypt</h2>
       </div>
     </div>
   </section>
-  <!-- end of popular header -->
-   <!-- start of popluar information  -->
+       <!-- end of popular header -->
+       <!-- start of popluar information  -->
     <section>
          <div class="container py-3">
             <div class="row g-5">
@@ -300,7 +350,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="card popularinformation position-relative" style="width: 20rem;height: 30rem;">
-                  <img src="img/imginfo1.jfif" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
+                  <img src="img/layer3.jpg" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
                   <div class="card-body d-flex justify-content-between">
                     <div class="text-info">
                       <h5 class="card-title text-uppercase">cairo</h5>
@@ -316,7 +366,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="card popularinformation position-relative" style="width: 20rem;height: 30rem;">
-                  <img src="img/imginfo1.jfif" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
+                  <img src="img/layer4.jpg" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
                   <div class="card-body d-flex justify-content-between">
                     <div class="text-info">
                       <h5 class="card-title text-uppercase">cairo</h5>
@@ -332,7 +382,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="card popularinformation position-relative" style="width: 20rem;height: 30rem;">
-                  <img src="img/imginfo1.jfif" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
+                  <img src="img/layer5.jpg" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
                   <div class="card-body d-flex justify-content-between">
                     <div class="text-info">
                       <h5 class="card-title text-uppercase">cairo</h5>
@@ -348,7 +398,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="card popularinformation position-relative" style="width: 20rem;height: 30rem;">
-                  <img src="img/imginfo1.jfif" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
+                  <img src="img/layer6.jpg" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
                   <div class="card-body d-flex justify-content-between">
                     <div class="text-info">
                       <h5 class="card-title text-uppercase">cairo</h5>
@@ -362,11 +412,11 @@
                 </div>
                 
               </div>
-                <div class="  row  d-flex justify-content-center">
+                <div class="  row  d-flex justify-content-center mt-3">
 
                   <div class="col-md-6">
                     <div class="card popularinformation position-relative" style="width: 20rem;height: 30rem;">
-                      <img src="img/imginfo1.jfif" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
+                      <img src="img/layer7.jpg" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
                       <div class="card-body d-flex justify-content-between">
                         <div class="text-info">
                           <h5 class="card-title text-uppercase">cairo</h5>
@@ -382,7 +432,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="card popularinformation position-relative" style="width: 20rem;height: 30rem;">
-                      <img src="img/imginfo1.jfif" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
+                      <img src="img/layer8.jpg" class="card-img-top mx-2" alt="..." style="width: 95%; height: 80%;">
                       <div class="card-body d-flex justify-content-between">
                         <div class="text-info">
                           <h5 class="card-title text-uppercase">cairo</h5>
@@ -406,13 +456,13 @@
     <!-- end of populuar information  -->
      <!-- start of populuar background -->
      <section  >
-      <div class="popularbackground w-100" style="background-image: url(img/popbg.webp);" >
-          
+      <div class="popularbackground w-100 position-relative" style="background-image: url(img/background2.jpg);" >
+          <div class="layer position-absolute w-100 h-100 top-0 left-0 bottom-0"></div>
       </div>
      </section>
       <!-- end of populuar background -->
       <!-- start of thanks  -->
-      <section class="bg-info py-4 rounded mt-5">
+      <section class="bg-header  py-4 rounded mt-5">
         <div class="container ">
           <div class="populer">
             <h2 class="text-center text-upper welcome-text text-uppercase  ">thank you</h2>
@@ -421,11 +471,11 @@
       </section>
        <!-- end of thanks -->
         <!-- start of thanks img -->
-         <section class="py-3">
+         <section class="py-3 ">
           <div class="container">
             <div class="row g-3 ">
               <div id="thanks-img" class="col-lg-4  ">
-                <div class="bg-image-section">
+                <div class="bg-image-section position-relative " style="background-image: url(img/icon2.jpeg);">
                   <div class="card thanks-text ">
            
                     <div class="card-img-overlay">
@@ -435,7 +485,7 @@
                   </div>
                   <div class="thanks-cirical position-relative ">
                     <div class="thanks-icon  position-relative z-1  " >
-                      <img src="img/icon.jpeg" alt="" style="width: 7rem; height: 7rem;" class="  rounded-pill">
+                      <img src="img/logo.jfif" alt="" style="width: 7rem; height: 7rem;" class=" rounded-pill">
                     </div>
                     <div class="card-body thanks-text" >
                       <h5 class="card-title">Eng. Mohammed Ismail</h5>
@@ -446,7 +496,7 @@
                
               </div>
               <div id="thanks-img"   class="col-lg-4 ">
-                <div class="bg-image-section">
+                <div class="bg-image-section position-relative" style="background-image: url(img/icon1.jpg);">
                   <div class="card thanks-text ">
            
                     <div class="card-img-overlay">
@@ -456,7 +506,7 @@
                   </div>
                   <div class="thanks-cirical position-relative ">
                     <div class="thanks-icon  position-relative z-1  " >
-                      <img src="img/icon.jpeg" alt="" style="width: 7rem; height: 7rem;" class="  rounded-pill">
+                      <img src="img/logo.jfif" alt="" style="width: 7rem; height: 7rem;" class="  rounded-pill">
                     </div>
                     <div class="card-body thanks-text" >
                       <h5 class="card-title">Eng. Mohammed Ismail</h5>
@@ -467,7 +517,7 @@
                
               </div>
               <div  id="thanks-img"  class="col-lg-4 ">
-                <div class="bg-image-section">
+                <div class="bg-image-section position-relative" style="background-image: url(img/icon.jpeg);">
                   <div class="card thanks-text ">
            
                     <div class="card-img-overlay">
@@ -477,7 +527,7 @@
                   </div>
                   <div class="thanks-cirical position-relative ">
                     <div class="thanks-icon  position-relative z-1  " >
-                      <img src="img/icon.jpeg" alt="" style="width: 7rem; height: 7rem;" class="  rounded-pill">
+                      <img src="img/logo.jfif" alt="" style="width: 7rem; height: 7rem;" class="  rounded-pill">
                     </div>
                     <div class="card-body thanks-text" >
                       <h5 class="card-title">Eng. Mohammed Ismail</h5>
@@ -494,9 +544,9 @@
          <!-- end of thanks img -->
           <!-- start of podcast -->
           <section class="container my-5">
-            <div class="row align-items-center  position-relative">
-                <div class="col-md-8">
-                    <div class="podcast card p-4 shadow">
+            <div class=" podcast-container  row align-items-center  position-relative">
+                <div class=" podcast-info  col-lg-8">
+                    <div class="podcast card p-4 shadow bg-warning-subtle ">
                         <h2 class="card-title text-primary">Podcast Title</h2>
                         <p class="text-muted"><i class="fa fa-calendar"></i> Mon, May 25th 2020</p>
                         <hr>
@@ -516,8 +566,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="tilted-image">
+                <div class="col-lg-4">
+                    <div class="tilted-image podcast-img">
                         <img src="img/background.jpg" class="img-fluid w-100 rounded tilted" alt="Image">
                     </div>
                 </div>
@@ -525,15 +575,17 @@
         </section>
         
            <!-- end of podcast -->
-           <section class="container my-5">
-            <div class="row align-items-center position-relative">
-                <div class="col-md-3 ">
+           <section class="my-5">
+
+            <div class="container">
+              <div class=" podcast-container2 row align-items-center position-relative">
+                <div class="col-lg-3 ">
                     <div class="tilted-image2">
                         <img src="img/background.jpg" class="img-fluid w-100 rounded tilted" alt="Image2">
                     </div>
                 </div>
-                <div class="col-md-9 order-md-2  ">
-                    <div class=" card p-4 shadow ">
+                <div class="col-lg-9 order-md-2  ">
+                    <div class=" card p-4 shadow bg-warning-subtle  ">
                       <div class="podcast2">
                         <h2 class="card-title text-primary">Podcast Title</h2>
                         <p class="text-muted"><i class="fa fa-calendar"></i> Mon, May 25th 2020</p>
@@ -559,14 +611,16 @@
                     </div>
                 </div>
             </div>
+            </div>
+            
             </section>
 
             <!-- start of second  -->
              <!-- start of podcast -->
           <section class="container my-5">
-            <div class="row align-items-center  position-relative">
-                <div class="col-md-8">
-                    <div class="podcast card p-4 shadow">
+            <div class=" podcast-container row align-items-center  position-relative">
+                <div class="col-lg-8">
+                    <div class="podcast card p-4 shadow bg-warning-subtle ">
                         <h2 class="card-title text-primary">Podcast Title</h2>
                         <p class="text-muted"><i class="fa fa-calendar"></i> Mon, May 25th 2020</p>
                         <hr>
@@ -586,7 +640,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="tilted-image">
                         <img src="img/background.jpg" class="img-fluid w-100 rounded tilted" alt="Image">
                     </div>
@@ -595,16 +649,18 @@
         </section>
         
            <!-- end of podcast -->
-           <section class="container my-5">
-            <div class="row align-items-center position-relative">
-                <div class="col-md-3 ">
+           <section class="  my-5">
+
+             <div class="container">
+              <div class=" podcast-container2 row align-items-center position-relative">
+                <div class="col-lg-3 ">
                     <div class="tilted-image2">
                         <img src="img/background.jpg" class="img-fluid w-100 rounded tilted" alt="Image2">
                     </div>
                 </div>
-                <div class="col-md-9 order-md-2  ">
-                    <div class=" card p-4 shadow ">
-                      <div class="podcast2">
+                <div class="col-lg-9 order-md-2  ">
+                    <div class=" card p-4 shadow bg-warning-subtle  ">
+                      <div class="podcast2  ">
                         <h2 class="card-title text-primary">Podcast Title</h2>
                         <p class="text-muted"><i class="fa fa-calendar"></i> Mon, May 25th 2020</p>
                         <hr>
@@ -629,9 +685,191 @@
                     </div>
                 </div>
             </div>
+             </div>
+            
             </section>
              <!-- end of second -->
-        
+              
+                <!-- start of button  -->
+                
+                <section class=" bg-warning-subtle">
+
+                  <div class="container text-center my-5">
+                    <h2 class="text-center text-upper welcome-text text-uppercase py-4">JOIN US</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                          <div class="d-flex flex-column mb-5  bg-header rounded">
+                          <div class="button-text">
+                            <h4 class="text-capitalize text-info py-3">subscribe now</h4>
+                          </div>
+                          <div class="icon-buttons">
+                            <label>
+                                <input type="checkbox">
+                                <span></span>
+                               <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a> 
+                            </label>
+                             </div>
+                          
+                             <div class="button-text2 py-3">
+                              <h4 class="text-capitalize text-info">go to link</h4>
+                            </div>
+                            </div>
+                          
+                            
+                        </div>
+                        <div class="col-md-3">
+                          <div class="d-flex flex-column mb-5  bg-header rounded">
+                          <div class="button-text">
+                            <h4 class="text-capitalize text-info py-3">subscribe now</h4>
+                          </div>
+                          <div class="icon-buttons">
+                            <label>
+                                <input type="checkbox">
+                                <span></span>
+                               <a href="https://x.com/" target="_blank" ><i class="fab fa-whatsapp whats text-success"></i></a> 
+                            </label>
+                             </div>
+                          
+                             <div class="button-text2 py-3">
+                              <h4 class="text-capitalize text-info">go to link</h4>
+                            </div>
+                            </div>
+                          
+                            
+                        </div>
+                        <div class="col-md-3">
+                          <div class="d-flex flex-column mb-5  bg-header rounded">
+                          <div class="button-text">
+                            <h4 class="text-capitalize text-info py-3">subscribe now</h4>
+                          </div>
+                          <div class="icon-buttons">
+                            <label>
+                                <input type="checkbox">
+                                <span></span>
+                               <a href="https://x.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
+                            </label>
+                             </div>
+                          
+                             <div class="button-text2 py-3">
+                              <h4 class="text-capitalize text-info">go to link</h4>
+                            </div>
+                            </div>
+                          
+                            
+                        </div>
+                        <div class="col-md-3">
+                          <div class="d-flex flex-column mb-5  bg-header rounded">
+                          <div class="button-text">
+                            <h4 class="text-capitalize text-info py-3">subscribe now</h4>
+                          </div>
+                          <div class="icon-buttons">
+                            <label>
+                                <input type="checkbox">
+                                <span></span>
+                               <a href="https://x.com/" target="_blank" ><i class="fab fa-instagram insta"></i></a> 
+                            </label>
+                             </div>
+                          
+                             <div class="button-text2 py-3">
+                              <h4 class="text-capitalize text-info">go to link</h4>
+                            </div>
+                            </div>
+                          
+                            
+                        </div>
+                    </div>
+
+                  </div>
+                  
+              </section>
+                 <!-- end of button  -->
+                  <!-- start of footer -->
+                   <footer class="bg-header">
+                    <div class="container py-4 ">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="d-flex footer-line flex-column">
+                            <span class="mb-4 fotter-span bg-white w-100" ></span>
+                            <div class="d-flex logo-circle justify-content-center align-items-center " >
+                              <div class="circle rounded-circle d-flex justify-content-center align-items-center"style="width: 100px; height: 100px;">
+                                <img src="img/logo.jfif" alt="" class="img-fluid rounded-circle  w-100 cover ">
+                              </div>
+                              <div class="logo-footer">
+                                <h5 class="text-capitalize text-center mx-2">good company</h5>
+                              </div>
+                            </div>
+                            <span class="mt-4 fotter-span bg-white w-100"></span>
+                            <div class="footer-info text-center py-3 ">
+                              <h6 class="lh-lg">Lorem ipsum dolor sit amet.</h6>
+                              <h6 class="lh-lg">Lorem ipsum dolor sit amet.</h6>
+                              <h6>Lorem ipsum dolor sit amet.</h6>
+                              
+                            </div>
+                                 
+                          
+                          
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="d-flex footer-line flex-column">
+                            <span class="mb-4 fotter-span bg-white w-100"></span>
+                            <div class="d-flex logo-circle justify-content-center align-items-center " >
+                              <div class="circle rounded-circle d-flex justify-content-center align-items-center"style="width: 100px; height: 100px;">
+                                <img src="img/logo.jfif" alt="" class="img-fluid rounded-circle  w-100 cover ">
+                              </div>
+                              <div class="logo-footer">
+                                <h5 class="text-capitalize text-center mx-2">good company</h5>
+                              </div>
+                            </div>
+                            <span class="mt-4 fotter-span bg-white w-100"></span>
+                            <div class="footer-info text-center py-3 ">
+                              <h6 class="lh-lg">Lorem ipsum dolor sit amet.</h6>
+                              <h6 class="lh-lg">Lorem ipsum dolor sit amet.</h6>
+                              <h6>Lorem ipsum dolor sit amet.</h6>
+                              
+                            </div>
+                                 
+                          
+                          
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="d-flex footer-line flex-column">
+                            <span class="mb-4 fotter-span bg-white w-100"></span>
+                            <div class="d-flex logo-circle justify-content-center align-items-center " >
+                              <div class="circle rounded-circle d-flex justify-content-center align-items-center"style="width: 100px; height: 100px;">
+                                <img src="img/logo.jfif" alt="" class="img-fluid rounded-circle  w-100 cover ">
+                              </div>
+                              <div class="logo-footer">
+                                <h5 class="text-capitalize text-center mx-2">good company</h5>
+                              </div>
+                            </div>
+                            <span class="mt-4 fotter-span bg-white w-100"></span>
+                            <div class="footer-info text-center py-3 ">
+                              <h6 class="lh-lg">Lorem ipsum dolor sit amet.</h6>
+                              <h6 class="lh-lg">Lorem ipsum dolor sit amet.</h6>
+                              <h6>Lorem ipsum dolor sit amet.</h6>
+                              
+                            </div>
+                                 
+                          
+                          
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="end-footer">
+                            <span class="fotter-span mb-4 bg-white w-100"></span>
+                            <h2 class="welcome-text text-center text-uppercase">copyright &copy 2024 shimaahussien el said good company all .</h2>
+                            <span class="fotter-span mt-4 bg-white w-100 "></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   </footer>
+                   <!-- end of footer -->
+
            
  
 
@@ -649,7 +887,7 @@
        
           
         
-
+     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
